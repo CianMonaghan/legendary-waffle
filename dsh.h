@@ -1,8 +1,8 @@
 #define MAXBUF 256  // max number of characteres allowed on command line
+#define PATH _PC_PATH_MAX //the path on the user's system
 
-// TODO: Any global variables go below
-int thisIsGlobal = 10;  // delete before submission
-
-// TODO: Function declarations go below
-void example(int*); // delete before submission
-
+void dshCheck(char *cmdline);
+void dshProcess(char *args[]);
+void dshDetermine(char *args[]);
+int dshRunMode2(char *path, char *dir, char *args[]);
+char* getCmdline();

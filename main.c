@@ -26,6 +26,7 @@ int main(int argc, char *argv[]) {
 
 
 	char *cmdline = (char*) malloc(MAXBUF); // stores user input from commmand line
-
+	dshCheck(getCmdline);
+	free(cmdline);
 	return 0;
 }
